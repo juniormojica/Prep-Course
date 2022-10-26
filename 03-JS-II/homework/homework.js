@@ -203,25 +203,60 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  
+  let contador = numero/2 
+  let lista = [];
+
+  for (let i = 0; i < contador; i++) {
+    
+
+    
+  }
+
+
+  
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+    function validator(valor) { 
+      if(valor == true){
+        return "Soy verdadero"
+      }
+      else return "Soy falso"
+    }
+    return validator(valor)
 
 }
 
 function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
-  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
   
-}
+    let contador = 10 ;
+    array = []; 
+    for (let i = 0; i < contador+1; i++) {
+      
+      
+        array.push(i*6)
+        
+    }
+  
+    return array;
+  }
+  
+  
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  let convertido = numero.toString()
+
+  if (convertido.length===3) {
+    return true
+  }
+  else return false
   
 }
 
@@ -229,6 +264,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let i = 0;
+
+  do { 
+      numero += 5 ;
+      console.log(numero)
+      i++
+  }while (i<8)
+  
+    return numero;
 }
 
 
