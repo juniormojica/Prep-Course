@@ -1,0 +1,40 @@
+* `for`
+El for es un atajo  con el que se pueden obtener muchas respuestas de una sola vez , es como si tuvieramos muchas cuadras por reccorer 
+y en vez de ir caminando una por una para contarlas , tu ya supieras cuantas cuadras quieres reccorer y fueras con los ojos cerrados corriendo 
+por que ya sabes exactamente donde tienes que frenar 
+
+con el for tambien puedes hacer las cosas mucho mas rapido, suponiendo que tienes que poner muchos cuadernos en tu mochila , unos 10. 
+pero tu estas en el colegio y tu mochila está en tu casa, sin el for tendrias que tomar 1 cuaderno , caminar hasta tu casa y ponerlo en la mochila y volver por otro al colegio
+10 veces, pero suponiendo que el for es un recipiente grande y que soporta mucho peso, solamente tendrias que poner los 10 cuadernos en el recipiente una vez e ir a tu
+casa 1 sola vez con todos los cuadernos y ponerlos en tu mochila, te ahorrarias tener que ir 9 veces mas por los demas cuadernos 
+
+
+
+
+* `&&`, `||`, `!`
+
+supongamos que es diciembre y tus papás te piden que escribas 3  cartas a a papá noel pero te dicen , en la carta tendras que remplazar 
+algunas palabras por simbolos para que papá noel pueda entender lo que le estas pidiendo.
+
+tus padres te dicen que en la primera carta puedes pedir varios regalos y papa noel te los tendra que traer todos , si te portaste bien 
+en todo el año puedes pedir 4 regalos , te dicen que hagas una lista de cada uno de los regalos separado por el simbolo && para que papa noel te 
+traiga TODOS los regalos y no faltará ninguno
+
+carta 1 del niño : 
+papa noel quiero un carro de juguete && una cama mas grande && un hermanito
+ 
+
+en la segunda carta solo podras elegir entre dos regalos o un carro de jueguetes o un hermanito ya que no te portaste tan bien este año
+papá noel tendra que decidir cual te va a regalar , pero con cualquiera de los dos vas a estar feliz 
+
+carta 2 del niño 
+
+papa noel quiero un carro de juguete ||  un hermanito
+
+para la tercera carta debes recordar que ya tienes un carro de juguete que te compraron tus padres, por lo que si quieres pedirle otro a papa
+noel el debe de saber que no puedo ser igual al que ya tienes , para eso puedes usar el simbolo ! para que el entienda que es otro carro 
+carta 3 del niño 
+
+papa noel quiero un carro de juguete ! al que ya tengo
+
+
