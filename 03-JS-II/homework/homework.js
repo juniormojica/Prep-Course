@@ -204,14 +204,12 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
-  let contador = numero/2 
-  let lista = [];
-
-  for (let i = 0; i < contador; i++) {
-    
-
-    
-  }
+  if (numero == 0 || numero == 1 || numero == 4) return false;
+	for (let x = 2; x < numero / 2; x++) {
+		if (numero % x == 0) return false;
+	}
+	
+	return true;
 
 
   

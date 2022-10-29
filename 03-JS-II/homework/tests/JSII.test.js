@@ -154,7 +154,7 @@ describe('operadoresLogicos(num1, num2, num3)', function() {
   });
 });
 
-xdescribe('esPrimo(num)', function() {
+describe('esPrimo(num)', function() {
   it('should return true if num is prime', function() {
     expect(esPrimo(7)).toBe(true);
     expect(esPrimo(97)).toBe(true);
