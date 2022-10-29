@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.length-1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
 
 
@@ -23,6 +26,14 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let arrayIncrease = []
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i]+1;
+
+    arrayIncrease.push(element)
+    
+  }
+  return arrayIncrease;
 }
 
 
@@ -30,6 +41,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+    array.push(elemento)
+    return array ;
 }
 
 
@@ -38,6 +51,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento)
+  return array 
 }
 
 
@@ -46,14 +61,22 @@ function dePalabrasAFrase(palabras) {
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-  // Tu código:
-}
+  // Tu código:var array = ["esto", "es", "un","array"]
+
+let arrayConvert = palabras.toString()
+
+arrayWithOutSpace = arrayConvert.replace(/,/g, " ");
+
+return arrayWithOutSpace
+
+} 
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+     return array.includes(elemento)
 }
 
 
@@ -61,6 +84,15 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let cuenta = 0;
+
+for (let i = 0; i < numeros.length; i++) {
+  const element = numeros[i];
+
+  cuenta = element +cuenta ;
+  
+}
+return cuenta
 }
 
 
@@ -68,6 +100,17 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let cuenta = 0;
+  let Largo = resultadosTest.length
+
+for (let i = 0; i < resultadosTest.length; i++) {
+  const element = resultadosTest[i];
+
+  cuenta = element +cuenta ;
+  
+}
+return cuenta/Largo;
+
 }
 
 
@@ -75,6 +118,9 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  let ordenados = numeros.sort(function(a, b){return a - b})
+
+  return ordenados[ordenados.length-1];
 }
 
 
