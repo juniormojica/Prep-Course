@@ -124,16 +124,54 @@ function numeroMasGrande(numeros) {
 }
 
 
-function multiplicarArgumentos() {
+function multiplicarArgumentos(argument) {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  let newArguments = [];
+  let multiplicar =1;
+  if (arguments.length == 0) {
+    
+    return 0 ;
+    
+  }
+  for (let i = 0; i < arguments.length; i++) 
+  {
+        const element = arguments[i];
+        newArguments.push(element)
+      
+  }
+  console.log(newArguments);
+  for (let i = 0; i < newArguments.length; i++)
+    {
+      const element = newArguments[i];
+
+      multiplicar *= element 
+      console.log(multiplicar);
+      
+    }
+  return multiplicar;
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+ 
+
+  let ordenados = arreglo.sort(function(a, b){return a - b})
+  let mayores = [];
+
+  console.log(ordenados);
+  for (let i = 0; i < ordenados.length; i++) {
+    const element = ordenados[i];
+    if (element>18) {
+      mayores.push(element)
+    }
+
+  }
+
+return mayores.length;
 
 }
 
@@ -142,7 +180,15 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
+  //Escribe tu código aquí   }
+    let finSemana = "Es fin de semana"
+     let laboral = "Es dia Laboral"
+
+    if(numeroDeDia == 1 ||numeroDeDia== 7 ) { 
+      return finSemana
+    } else { 
+      return laboral
+    }
   
 } 
 
